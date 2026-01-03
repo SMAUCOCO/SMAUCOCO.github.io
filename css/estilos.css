@@ -12,7 +12,7 @@ h1 {
     border: 5px solid #933f0e;
     border-radius: 30px;
     color: #fce8dc;
-    font-size: 290%;
+    font-size: 260%;
 }
 
 img {
@@ -53,7 +53,7 @@ p {
     border: 4px dashed black;
     background-color: rgb(210, 175, 250);
     margin-right: 60px;
-    box-shadow: 5px 5px 5px #353434;
+    
 }
 
 
