@@ -44,6 +44,7 @@ body {
     border:black 4px solid;
     border-radius: 3%;
     /* 7- tamanyo */
+    width: 50%;
     /* Se utiliza en imágenes y videos 
     para asegurarse de que siempre llenen 
     completamente el contenedor, manteniendo
@@ -56,6 +57,7 @@ body {
     /* 8- redondear la imagen*/
     width: 150px;
     height: 150px;    
+    border-radius: 50%;
     /* Se utiliza en imágenes y videos 
     para asegurarse de que siempre llenen 
     completamente el contenedor, manteniendo 
@@ -82,6 +84,7 @@ body {
 
 li {
     /* 10- haz que los li no sean de tipo bloque */
+    display: inline-block;
     /* 11- borde izquierdo rojo */
     border-left: 4px red solid;
     /* 12- separa el borde de la izquierda */
@@ -90,11 +93,14 @@ li {
 
 #menu a {
     /* 13- enlaces blancos */
+    color: white;
     /* 14- sin subrayado */
+    text-decoration: none;
 }
 
 #menu a:hover {
     /* 15- cambia el color al subrayado*/
+    color: red;
 }
 
 
@@ -112,16 +118,20 @@ li {
 }
 .button:hover {
     /* 16- cambia el color al boton*/
+    background-color: #17eaae;
 }
 
 @media all and (max-width: 700px) {
     .youtuber, .footer {
         /* 17- cambia el color al BORDE*/
+        border-color: red;
     }
     .button {
-        /* 18- cambia el color al boton*/        
+        /* 18- cambia el color al boton*/  
+        background-color: red;      
     }
     .button:hover {
         /* 19- cambia el color al boton*/
+        background-color: rgb(146, 1, 1);
     }    
 }

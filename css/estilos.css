@@ -26,7 +26,7 @@ img {
 
 ul {
 
-    list-style-type: square;
+    list-style-type: none;
 }
 
 li {
@@ -34,6 +34,13 @@ li {
     margin: 10px;
     font-size: 23px;
     text-align: center;
+    font-family:'Brush Script MT', cursive;
+    
+}
+
+li a {
+
+    text-decoration: none;
 }
 
 p {
@@ -60,6 +67,13 @@ footer{
     margin-top: 20px;
     padding: 10px;
     font-size: 170%;
+}
+
+li a:hover {
+
+    border-radius: 10px;
+    background-color: #d1d1d1;
+    color: rgb(181, 97, 0)
 }
 
 
