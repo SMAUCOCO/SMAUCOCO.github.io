@@ -48,12 +48,9 @@ p {
   Punto 1: Barra de menu siempre estara 
   */
   /* necesitas 3 instrucciones*/
-  /*1: */
-  position: fixed;
-  /*2: */
-  top: 0px;
-  /*3: */
-  width: 100%;
+  /*1: */   position: fixed;
+  /*2: */   top: 0px;
+  /*3: */   width: 100%;
 
   text-align: center;  
   background-color: #097054;
@@ -89,10 +86,10 @@ p {
   Punto 6: Barra de pie de pagina siempre estara 
   */
   /* necesitas 3 instrucciones*/
-  /*1: */
-  /*2: */
-  /*3: */
-  
+  /*1: */ position: fixed;
+  /*2: */ bottom: 0px;
+  /*3: */ width: 100%;
+
   background-color: #097054;
   text-align: center;
   color: white;
@@ -190,7 +187,7 @@ p {
  */
 
   /* necesitas 2 instruccion*/
-  /*1: */  
+  /*1: */  overflow: scroll;
   /*2: */  
   
   height: 250px;
@@ -231,7 +228,7 @@ p {
     Punto 7.1: Barra de menu siempre estara 
     */
     /* necesitas 1 instruccion*/
-    /*1: */
+    /*1: */ float: none;
     text-align: center;
     padding-bottom: 5px;
   }
@@ -241,7 +238,7 @@ p {
     Punto 7.1: Barra de menu siempre estara 
     */
     /* necesitas 1 instruccion*/
-    /*1: */
+    /*1: */ float: none;
     text-align: center;
     clear: both;
   padding-bottom: 5px;
@@ -256,7 +253,7 @@ p {
     Punto 7.2: Barra de menu siempre estara 
     */
     /* necesitas 1 instruccion*/
-    /*1: */
+    /*1: */ float: none;
 
     text-align: center;
     margin-bottom: 40px;
