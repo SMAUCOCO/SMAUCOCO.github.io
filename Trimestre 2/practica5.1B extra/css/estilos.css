@@ -19,8 +19,7 @@ h1, h2 {
 img {
   border: solid 3px rgb(20, 95, 37);
   margin: 10px;
-  box-shadow: 4px 4px 10px rgb(164, 161, 161);
-  background-color: rgb(20, 95, 37);
+
 }
 
 ul {
@@ -137,7 +136,9 @@ p {
   padding-bottom: 5px;
   width:30%;
   margin-top: 25px;
-  border-radius: 8px
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgb(164, 161, 161);
+  background-color: rgb(20, 95, 37);
   
 }
 
@@ -148,7 +149,9 @@ p {
   text-align: center;  
   padding-bottom: 5px;
   width: 55%;
-  border-radius: 8px
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgb(164, 161, 161);
+  background-color: rgb(20, 95, 37);
 
 
 }
