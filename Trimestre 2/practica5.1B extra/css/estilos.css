@@ -17,8 +17,10 @@ h1, h2 {
 }
 
 img {
-  border: dashed 5px #FF9900;
+  border: solid 3px rgb(20, 95, 37);
   margin: 10px;
+  box-shadow: 4px 4px 10px rgb(164, 161, 161);
+  background-color: rgb(20, 95, 37);
 }
 
 ul {
@@ -125,6 +127,7 @@ p {
   width:50px;
   margin-top: 25px;
   border: none;
+  
 }
 
 #imageLeft {
@@ -132,8 +135,10 @@ p {
   float: left;
   text-align: center;  
   padding-bottom: 5px;
-  width:13%;
+  width:30%;
   margin-top: 25px;
+  border-radius: 8px
+  
 }
 
 #imageRight {
@@ -143,6 +148,8 @@ p {
   text-align: center;  
   padding-bottom: 5px;
   width: 55%;
+  border-radius: 8px
+
 
 }
 
@@ -169,11 +176,12 @@ p {
   margin-left: 9%;
   position: absolute;
   margin-top: 11%;
-  border:2px solid red;
+  border:8px solid rgb(20, 95, 37);
   background-color: white;
   margin-bottom: 5px;
   padding-bottom: 5px;
-  box-shadow: 2px 2px 50px black;
+  box-shadow: 8px 8px 50px black;
+  border-radius: 20px;
 }
 
 #textOverflow {
@@ -275,7 +283,28 @@ p {
     margin-bottom: 90px;
   }
 
+  #menulateral {
+    
   
+  margin-bottom: 0px;
+  right: 0;
+  left: 0;
+  transform: none;
+  flex-direction: row;       /* horizontal */
+  justify-content: center;   /* centrar imágenes */
+  align-items: center;
+  width:100%;
+  display: flex;       /* reafirmar */
 
-  
+    
+
+  }
+
+  #logo {
+
+    width: 20px;
+    padding-left: 1px;
+
+     
+
 }
