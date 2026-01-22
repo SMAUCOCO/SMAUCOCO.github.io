@@ -193,23 +193,26 @@ p {
   overflow-y: scroll;
   height: 250px;
   text-align: justify;
-  border: 5px solid black;
+  border: 5px solid rgb(41, 33, 179);
   background-color: white;
   padding: 20px;
   margin-right: 10%;
   margin-left: 10%;
   margin-top: 40px;
   margin-bottom: 50px;
+  border-radius: 30px;
   
 }
 
 #textCentral {
   margin-top: 10px;
   padding: 15px;
-  border: 5px solid rgb(114, 214, 134);
+  border: 5px solid rgb(41, 33, 179);
   background-color: white;
   margin: 30px 250px ;
-  border-radius: 30px 30px 30px 30px ;    
+  border-radius: 30px;   
+  overflow: scroll;
+  overflow-y: scroll; 
 }
 
 .button {
@@ -256,6 +259,28 @@ p {
     margin-bottom: 90px;
   }
 
+  #menulateral {
+    
+  
+  margin-bottom: 30px;
+  right: 0;
+  left: 0;
+  transform: none;
+  flex-direction: row;       
+  justify-content: center;   
+  align-items: center;
+  width:100%;
+  display: flex;      
+  border-right: 5px solid black; 
+  margin-right: 20px;
+
+  }
+
+  #logo {
+
+    width: 27px;
+    padding-left: 1px;
+  }
  
 }
 
@@ -280,6 +305,7 @@ p {
     margin-right: 10px;
     margin-left: 10px;
   }
+
   #textOverflow {
     margin-right: 10px;
     margin-left: 10px;
@@ -287,27 +313,24 @@ p {
   }
 
   #menulateral {
-    
-  
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   right: 0;
   left: 0;
   transform: none;
-  flex-direction: row;       /* horizontal */
-  justify-content: center;   /* centrar imágenes */
+  flex-direction: row;      
+  justify-content: center;  
   align-items: center;
   width:100%;
-  display: flex;       /* reafirmar */
-
-    
-
+  display: flex;     
+  border-right: 5px solid black;  
+  margin-right: 20px;
+ 
   }
 
   #logo {
-
-    width: 20px;
+    width: 27px;
     padding-left: 1px;
-
+  }
      
 
 }
