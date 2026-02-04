@@ -1,0 +1,111 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+
+}
+
+/* Para centrar la tarjeta puedes hacerle margin-auto al .card o tambien otra opcion que es mejor 
+es hacer que el padre de .card ya sea body u otro div sea display flex y ahi si le pongo justify-content: center
+porque ese justify afecta a los hijos de donde se ponga no directamente al que lo pones*/
+
+.header {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: rgb(104, 104, 233);
+    
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 0px;
+    
+    
+}
+
+
+.bio {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+
+    
+
+.stats {
+
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+   
+    
+}
+
+.stat-item {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.actions {
+
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+    
+}
+
+.btn-primary {
+    background-color: rgb(112, 112, 222);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    flex-grow: 2;
+}
+
+.btn-secondary {
+    background-color: rgb(218, 218, 218);
+    border: none;
+    border-radius: 5px;
+    flex-grow: 1;
+    height: 40px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(81, 81, 206);
+    
+}
+
+.btn-secondary:hover {
+    background-color: rgb(186, 186, 186);
+    
+}
