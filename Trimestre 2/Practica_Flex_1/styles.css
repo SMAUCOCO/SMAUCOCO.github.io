@@ -1,8 +1,7 @@
-
 .container {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .card {
@@ -35,7 +34,7 @@ porque ese justify afecta a los hijos de donde se ponga no directamente al que l
     height: 110px;
     border-radius: 50%;
     background-color: rgb(104, 104, 233);
-    
+
 }
 
 .user-info {
@@ -43,8 +42,8 @@ porque ese justify afecta a los hijos de donde se ponga no directamente al que l
     flex-direction: column;
     align-items: start;
     margin-top: 0px;
-    
-    
+
+
 }
 
 
@@ -54,7 +53,7 @@ porque ese justify afecta a los hijos de donde se ponga no directamente al que l
 }
 
 
-    
+
 
 .stats {
 
@@ -62,12 +61,12 @@ porque ese justify afecta a los hijos de donde se ponga no directamente al que l
     display: flex;
     justify-content: space-around;
     padding: 10px;
-   
-    
+
+
 }
 
 .stat-item {
-    
+
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -81,7 +80,7 @@ porque ese justify afecta a los hijos de donde se ponga no directamente al que l
     justify-content: space-around;
     padding: 10px;
     gap: 10px;
-    
+
 }
 
 .btn-primary {
@@ -102,10 +101,10 @@ porque ese justify afecta a los hijos de donde se ponga no directamente al que l
 
 .btn-primary:hover {
     background-color: rgb(81, 81, 206);
-    
+
 }
 
 .btn-secondary:hover {
     background-color: rgb(186, 186, 186);
-    
+
 }
