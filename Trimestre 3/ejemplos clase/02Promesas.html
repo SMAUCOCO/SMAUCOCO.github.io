@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Promise sencilla</title>
+  <link rel="stylesheet" href="css/02.css">
+</head>
+<body>
+  <button id="btn">Probar promesa</button>
+  <div id="caja">Esperando...</div>
+
+  <script>
+    //variables
+    const btn = document.getElementById("btn");
+    const caja = document.getElementById("caja");
+
+    //funciones
+    function tareaAsync() {
+      return new Promise((resolve, reject) => {
+        caja.textContent = "Cargando...";
+        caja.style.background = "khaki";
+
+        setTimeout(() => {
+          const todoBien = true; // cambia a false para probar el error
+
+          if (todoBien) {
+            resolve("Hecho");
+          } else {
+            reject("Falló");
+          }
+        }, 2000);//ms que tarda en ejecutarse el setTimeOut
+      });
+    }
+
+    //eventos
+    btn.addEventListener("click", () => {
+
+      //Aqui llama a tareaAsync que ya contiene el setTimeOut
+      tareaAsync()
+      //.then es siempre el resolve y .catch es siempre el reject
+        .then((mensaje) => {
+          caja.textContent = mensaje;
+          //Aqui se asigna el contenido y color de la caja despues del timeout y
+          //mensaje es el "Hecho" del .then que es resolve y en error es lo mismo
+          //pero con el reject y error = "Falló"
+          
+          caja.style.background = "lightgreen";
+        })
+        .catch((error) => {
+          caja.textContent = error;
+          caja.style.background = "tomato";
+        });
+    });
+
+  </script>
+</body>
+</html>

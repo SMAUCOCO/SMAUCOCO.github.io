@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gatetes</h1>
+    <input type="button" id="boton" value="Run">
+    <div id="resultado"></div>
+    
+    <script>
+
+        let boton=document.getElementById("boton")
+        let resultado=document.getElementById("resultado")
+        let url="https://api.thecatapi.com/v1/images/search"
+
+
+        function getImage (){
+
+            fetch(url)
+
+             //el primer .then recoge los datos del link de fetch
+            .then(response => response.json() )
+
+            //data recupera el "return respone.json()" y lo envia al div
+            .then(data => resultado.innerHTML=data[0].url)
+
+            .catch(error => resultado.innerHTML = "ERROR" + error)
+
+
+        }
+
+        boton.addEventListener("click", (e) => {
+
+            getImage()
+
+           
+        })
+
+
+        
+      
+
+    </script>
+</body>
+</html>

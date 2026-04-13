@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TIEMPO AHORA</h1>
+    <input type="button" id="run" value="RUN">
+    <div id="resultado"></div>
+    
+    <script>
+
+        let boton=document.getElementById("run")
+        let resultado=document.getElementById("resultado")
+
+
+        boton.addEventListener("click", (e) => {
+
+
+            fetch("https://timeapi.io/api/Time/current/zone?timeZone=Europe/Madrid")
+
+            //el primer .then recoge los datos del link de fetch
+            .then(response => {
+                
+                //response es lo mismo que el de arriba, puede ser como yo quiera
+                return response.json()
+
+            })
+
+            //data recupera el "return respone.json()" y lo envia al div
+            .then(data => resultado.innerHTML=data.time)
+
+            .catch(error => resultado.innerHTML = "ERROR" + error)
+
+        })
+
+
+        
+      
+
+    </script>
+</body>
+</html>
